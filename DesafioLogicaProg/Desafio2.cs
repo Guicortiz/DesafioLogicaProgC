@@ -4,7 +4,7 @@ namespace DesafioLogicaProg
 {
     class Desafio2
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             double raio;
 

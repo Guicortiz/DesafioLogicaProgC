@@ -4,7 +4,7 @@ namespace DesafioLogicaProg
 {
     class Desafio3
     {
-        static void Main(string[] args)
+        public void Main(string[] args)
         {
             int codigo, qtde;
 
@@ -23,20 +23,30 @@ namespace DesafioLogicaProg
 
             static double resutadopedido(int codigo, int qtde)
             {
-                double resultado;
+                double resultado= 0;
                 switch (codigo)
                 {
                     case 1:
-                        return (qtde * 4.00);
+                        resultado = (qtde * 4.00);
+                        break;
                     case 2:
-                        return (qtde * 4.50);
+                        resultado = (qtde * 4.50);
+                        break;
                     case 3:
-                        return (qtde * 5.00);
+                        resultado = (qtde * 5.00);
+                        break;
                     case 4:
-                        return (qtde * 2.00);
+                        resultado = (qtde * 2.00);
+                        break;
                     case 5:
-                        return (qtde * 1.50);
+                        resultado = (qtde * 1.50);
+                        break;
+                    default:
+                        Console.WriteLine("Default case");
+                        break;
                 }
+
+                return resultado;
             }
         }
     }
